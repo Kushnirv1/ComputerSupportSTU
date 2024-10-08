@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.7.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">---
+title: &quot;Task1&quot;
+author: &quot;Vladyslav Kushnir&quot;
+date: &quot;10/01/2024&quot;
+format:
+  html:
+    embed-resources: true
+editor: source
+---
+
+## Question 1
+
+Question description
+
+```{r}
+# code for solving task
+v1 &lt;- 10.62636237
+v2 &lt;- 40L
+v3 &lt;- &quot;character variable skjdhfkjshadfjksdhf&quot;
+v4 &lt;- TRUE
+v5 &lt;- 16+8i
+print(c(v1, v2,v3,v4,v5))
+```
+
+
+## Question 2 
+
+Question description
+2. Create the next vectors:
+ * sequence from 5 to 75;
+ * numbers: 3.14, 2.71, 0, 13;
+ * with 100 'TRUE' values.
+```{r}
+# code for solving task 
+sequence_vector &lt;-  5:75
+number_vector &lt;- c(3.14, 2.71, 0.13)
+true_vector &lt;- rep(TRUE,100)
+```
+
+## Question 3 
+
+Question description
+3. Create the next matrix:
+
+|  |   |  |
+|:---:|:-----:|:---:|
+| 12  | 34    | 87  |
+| -12 | -12.1 | 0   |
+| 3.6 | 0.5   | 1.3 |
+```{r}
+#code for solving task 
+my_data &lt;-  matrix(c(12, 34, 87, -12, -12.1, 0, 3.6, 0.5, 1.3), nrow = 3, byrow = TRUE)
+print(my_data)
+```
+
+## Question 4
+Question description
+4. Create a 'list' with all atomic types.
+```{r}
+#code for solving task
+my_list &lt;- list(
+  integer_value = 75L,
+  numeric_value = 5.43,
+  character_value = &quot;Have a good day&quot;,
+  logical_value = TRUE,
+  complex_value = 2+4i
+)
+
+my_list
+```
+
+## Question 5
+Question description
+5.Create a 'factor' with 3 levels: 'infant', 'child', 'adult'.
+```{r}
+# code for solving task
+my_factor &lt;- factor(c(&quot;big&quot;,&quot;avarage&quot;,&quot;small&quot;,&quot;small&quot;,&quot;avarge&quot;,&quot;big&quot;),
+level = c(&quot;big&quot;,&quot;avarage&quot;,&quot;small&quot;))
+my_factor
+```
+
+## Question 6
+Question description
+6 Create a 'data frame'
+```{r}
+# code for solving task
+age_factor &lt;- factor(c(&quot;infant&quot;,&quot;child&quot;,&quot;adult&quot;), levels =c(&quot;infant&quot;,&quot;child&quot;,&quot;adult&quot;))
+
+print(age_factor)
+```
+
+## Question 7
+Change column names of the 'data frame'.
+```{r}
+names(my_data) &lt;- c(&quot;V4 country&quot;,&quot;population, M&quot;)
+my_data
+```
+
+
+
+
+
+
+
+
+
+
+  </pre>
+</body>
+</html>
